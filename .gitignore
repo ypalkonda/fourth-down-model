@@ -1,0 +1,33 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Node
+node_modules/
+dashboard/dist/
+
+# Raw downloads — regenerate with `make data`
+data/raw/
+
+# Large intermediates. These are training inputs, not runtime inputs, and
+# they rebuild from raw in a couple of minutes. The three files the API
+# actually serves are committed (see !-rules below) so a deploy needs no
+# training step.
+data/processed/*.parquet
+!data/processed/scored_fourth_downs.parquet
+!data/processed/coach_summary.parquet
+!data/processed/season_summary.parquet
+
+# Model artifacts. The torch checkpoints and XGBoost boosters are training
+# outputs; the exported numpy bundle is what production loads, so it ships.
+models/*.pt
+models/xgb_*.json
+!models/weights.npz
+!models/weights_meta.json
+!models/preprocessor.json
+!models/preprocessor.npz
+
+.DS_Store

@@ -1,0 +1,78 @@
+{
+  "n_scored": 41082,
+  "n_real_decisions": 26923,
+  "agreement_rate": 0.7200534858671025,
+  "mean_wp_loss": 0.005158911623840824,
+  "seasons": [
+    {
+      "season": 2016,
+      "n": 2691,
+      "actual_go_rate": 0.07320698625046451,
+      "optimal_go_rate": 0.3218134522482349,
+      "mean_wp_loss": 0.006122013264647517
+    },
+    {
+      "season": 2017,
+      "n": 2786,
+      "actual_go_rate": 0.0732232591529074,
+      "optimal_go_rate": 0.312275664034458,
+      "mean_wp_loss": 0.005751959938416893
+    },
+    {
+      "season": 2018,
+      "n": 2605,
+      "actual_go_rate": 0.09827255278310941,
+      "optimal_go_rate": 0.3124760076775432,
+      "mean_wp_loss": 0.005158647966362007
+    },
+    {
+      "season": 2019,
+      "n": 2549,
+      "actual_go_rate": 0.1090623774029031,
+      "optimal_go_rate": 0.30443311102393095,
+      "mean_wp_loss": 0.004970217969819535
+    },
+    {
+      "season": 2020,
+      "n": 2402,
+      "actual_go_rate": 0.1440466278101582,
+      "optimal_go_rate": 0.3405495420482931,
+      "mean_wp_loss": 0.004841685701443889
+    },
+    {
+      "season": 2021,
+      "n": 2680,
+      "actual_go_rate": 0.15223880597014924,
+      "optimal_go_rate": 0.35559701492537316,
+      "mean_wp_loss": 0.005206182407938055
+    },
+    {
+      "season": 2022,
+      "n": 2872,
+      "actual_go_rate": 0.13266016713091922,
+      "optimal_go_rate": 0.32207520891364905,
+      "mean_wp_loss": 0.005658459456632313
+    },
+    {
+      "season": 2023,
+      "n": 2884,
+      "actual_go_rate": 0.1407766990291262,
+      "optimal_go_rate": 0.3259361997226075,
+      "mean_wp_loss": 0.004897818175672803
+    },
+    {
+      "season": 2024,
+      "n": 2737,
+      "actual_go_rate": 0.1527219583485568,
+      "optimal_go_rate": 0.32590427475337963,
+      "mean_wp_loss": 0.0045114828516607695
+    },
+    {
+      "season": 2025,
+      "n": 2717,
+      "actual_go_rate": 0.17666543982333455,
+      "optimal_go_rate": 0.33860875966139126,
+      "mean_wp_loss": 0.004409306719323314
+    }
+  ]
+}

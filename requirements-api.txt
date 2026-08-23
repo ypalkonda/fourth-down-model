@@ -1,0 +1,13 @@
+# Runtime dependencies for the deployed API. Deliberately excludes torch,
+# xgboost, scikit-learn, matplotlib and nflreadpy — all of them are training
+# and analysis tools, none is needed to serve a prediction.
+#
+# The four models total 91k parameters (342 KB). Serving them through PyTorch
+# would mean shipping 536 MB of framework to run 342 KB of weights, so the
+# forward passes are reimplemented in numpy (src/fourthdown/numpy_models.py)
+# and verified equivalent to 3.4e-07 by scripts/export_weights.py.
+flask==3.1.*
+flask-cors==5.0.*
+polars==1.*
+numpy==2.*
+gunicorn==23.*

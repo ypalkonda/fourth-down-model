@@ -1,0 +1,14 @@
+# Render blueprint. Point Render at this repo and it reads this file — no
+# dashboard clicking. Free tier is enough: the image has no PyTorch, so the
+# whole service runs in well under 512 MB.
+services:
+  - type: web
+    name: fourth-down
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"

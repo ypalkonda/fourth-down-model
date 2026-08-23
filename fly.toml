@@ -1,0 +1,26 @@
+# Fly.io alternative to render.yaml. `fly launch --no-deploy` then `fly deploy`.
+app = "fourth-down"
+primary_region = "iad"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[http_service]
+  internal_port = 8000
+  force_https = true
+  # Scale to zero between visits. A demo link gets traffic in bursts, and a
+  # cold start here is a few seconds because there is no PyTorch to import.
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+
+[[http_service.checks]]
+  interval = "30s"
+  timeout = "5s"
+  grace_period = "10s"
+  method = "GET"
+  path = "/api/health"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"

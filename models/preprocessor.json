@@ -1,0 +1,70 @@
+{
+  "trunk_cols": [
+    "yardline_100",
+    "ydstogo",
+    "down_1",
+    "down_2",
+    "down_3",
+    "down_4",
+    "goal_to_go",
+    "half_seconds_remaining",
+    "game_seconds_remaining",
+    "posteam_timeouts_remaining",
+    "defteam_timeouts_remaining",
+    "is_home",
+    "roof_dome",
+    "roof_outdoors",
+    "roof_retractable",
+    "receive_2h_ko",
+    "season_norm",
+    "is_17_game_era"
+  ],
+  "wp_cols": [
+    "score_differential",
+    "diff_time_ratio",
+    "spread_time",
+    "posteam_spread_line"
+  ],
+  "teams": [
+    "ARI",
+    "ATL",
+    "BAL",
+    "BUF",
+    "CAR",
+    "CHI",
+    "CIN",
+    "CLE",
+    "DAL",
+    "DEN",
+    "DET",
+    "GB",
+    "HOU",
+    "IND",
+    "JAX",
+    "KC",
+    "LA",
+    "LAC",
+    "LV",
+    "MIA",
+    "MIN",
+    "NE",
+    "NO",
+    "NYG",
+    "NYJ",
+    "PHI",
+    "PIT",
+    "SEA",
+    "SF",
+    "TB",
+    "TEN",
+    "WAS"
+  ],
+  "dropped": [
+    "dynamic_kickoff_era",
+    "ot_rules_2025"
+  ],
+  "season_norm_range": [
+    0.0,
+    0.7777777777777777
+  ]
+}

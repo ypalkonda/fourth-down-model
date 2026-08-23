@@ -1,0 +1,15 @@
+{
+  "fg_val_logloss": 0.39226698875427246,
+  "fg_val_brier": 0.12207834422588348,
+  "fg_test_logloss": 0.3712558448314667,
+  "fg_test_brier": 0.11461669206619263,
+  "fg_worst_distance_bin_gap": 0.10043475207160502,
+  "punt_val_logloss": 1.9807523488998413,
+  "punt_val_baseline": 2.372635691474652,
+  "punt_test_logloss": 1.977326512336731,
+  "punt_test_baseline": 2.3869678673964723,
+  "gain_val_logloss": 2.68418550491333,
+  "gain_val_baseline": 2.834134308542401,
+  "gain_test_logloss": 2.6727240085601807,
+  "gain_test_baseline": 2.826932062614988
+}
