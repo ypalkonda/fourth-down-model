@@ -7,16 +7,25 @@ name = "fourthdown"
 version = "0.1.0"
 description = "A counterfactual expected-points and win-probability model for NFL fourth-down decisions"
 requires-python = ">=3.11"
+# Core dependencies are only what the deployed API needs to serve predictions.
+# Vercel installs these, so keeping torch and friends out keeps the function
+# small. Training and analysis tools live in the `train` extra:
+#   pip install -e ".[train]"
 dependencies = [
-    "nflreadpy",
+    "flask",
+    "flask-cors",
     "polars",
+    "numpy",
+]
+
+[project.optional-dependencies]
+train = [
+    "nflreadpy",
     "pandas",
     "pyarrow",
     "torch",
     "xgboost",
     "scikit-learn",
-    "flask",
-    "flask-cors",
     "matplotlib",
     "tqdm",
 ]

@@ -10,8 +10,12 @@ there is no reason to touch disk per request.
 from __future__ import annotations
 
 import math
+import sys
 from functools import lru_cache
 from pathlib import Path
+
+# Make src/ importable without an install step (Vercel, gunicorn, plain python).
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 import polars as pl
 from flask import Flask, jsonify, request, send_from_directory

@@ -18,7 +18,7 @@ SITE="$($PY -c 'import sysconfig; print(sysconfig.get_paths()["purelib"])')"
 
 echo "==> installing dependencies"
 "$PY" -m pip install --quiet --upgrade pip
-"$PY" -m pip install --quiet -e .
+"$PY" -m pip install --quiet -e ".[train]"
 
 # ---------------------------------------------------------------------------
 # Fix 1: xgboost cannot find OpenMP.
